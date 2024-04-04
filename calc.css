@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 25, 25);
+    /* border: 1px solid red; */
+}
+.struc{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    border-radius: 1rem;
+    gap: 0.5rem;
+}
+input[type="text"]{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.082);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: white;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.num{
+    height: 60%;
+    border-radius: 1rem;
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 0.3rem;
+    background: linear-gradient(0deg ,rgba(0, 0, 0, 0.623), rgba(31, 30, 31, 0.164));
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'montserrat';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    border-radius: 1rem;
+    border: 0px;
+    background: transparent;
+    transition: box-shadow 0.3s linear 0s, transform 0.2s linear 0s;
+    /* border: 1px solid red; */
+}
+button:hover{
+    background-color: rgb(3, 1, 7);
+    box-shadow: 0px 2px 4px rgb(0, 255, 242);
+    border-radius: 1rem;
+    transform: translateY(-0.3rem);
+}
+@media (max-width: 450px) {
+    .struc{
+        width: 100%;
+        height: 100%;
+    }
+    .num{
+        background: linear-gradient(0deg ,rgba(0, 0, 0, 0.623), rgba(255, 255, 255, 0.082));
+    }
+    .struc{
+        height: 100%;
+    }
+}
+.com{
+    background: linear-gradient(90deg, rgba(1, 19, 43, 0.562), rgba(1, 26, 41, 0.658));
+}
+.ncom{
+    background: linear-gradient(90deg,rgba(1, 9, 54, 0.596), rgba(14, 1, 61, 0.678));
+}
